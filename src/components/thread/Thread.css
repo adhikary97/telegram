@@ -1,0 +1,84 @@
+.thread {
+  display: flex;
+  flex: .75;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.thread__header {
+  display: flex;
+  border-bottom: 1px solid rgb(190,190,190, .1);
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.thread__header__contents {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 10px
+}
+
+.thread__header__contents__info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.thread__header__contents__info > h5 {
+  font-weight: 500;
+  color: gray;
+}
+
+.thread__header__details {
+  color: white;
+}
+
+.thread__header__details:hover {
+  color: rgb(2, 150, 199);
+}
+
+.thread__messages {
+  flex: 1;
+  overflow: scroll;
+}
+
+.thread__messages::-webkit-scrollbar {
+  display: none;
+}
+
+.thread__input {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: transparent;
+  border-top: 1px solid rgb(190,190,190, .1);
+}
+
+.thread__input > form {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+}
+
+.thread__input > form > input {
+  width: 98%;
+  outline-width: 0;
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+  padding: 5px;
+  color: white;
+}
+
+.thread__input > form > button {
+  color: white;
+}
+
+.thread__input > form > button:hover {
+  color: rgb(2, 150, 199);
+}
